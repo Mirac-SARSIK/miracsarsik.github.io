@@ -1,0 +1,311 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+:root {
+  --main-color: #121212;
+  --black-color: #000000;
+  --border: 0.1rem solid rgba(11, 25, 44, 0.4);
+}
+
+* {
+  font-family: "Montserrat", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  border: none;
+  text-transform: capitalize;
+  transition: 0.2s ease;
+}
+
+/* ana html kod */
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-padding-top: 9rem;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--black-color);
+}
+
+section {
+  padding: 3.5rem 7%;
+}
+
+
+html::-webkit-scrollbar{
+  width: 0.8rem;
+  background-color: #fff;
+}
+
+html::-webkit-scrollbar-thumb{
+  border-radius: 0.1rem;
+  background-color: var(--black-color);
+}
+
+/* Menü Başlangıç */
+.header .logo img {
+  height: 10rem;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 7%;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background-color: transparent;
+  transition: background-color 0.4s ease; 
+}
+
+.header.scrolled{
+  background-color: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(4px);
+}
+
+.header .navbar a {
+  margin: 0 1rem;
+  font-size: 1.8rem;
+  color: #fff;
+  border-bottom: 0.1rem solid transparent;
+}
+
+.header .navbar a:hover {
+  border-color: #fff;
+  padding-bottom: 0.5rem;
+}
+
+.header .buttons button {
+  cursor: pointer;
+  font-size: 2.5rem;
+  color: #fff;
+  background-color: transparent;
+}
+
+/* Menü Bitiş */
+
+/* ÖnBilgi Başlangıç */
+
+.home {
+  min-height: 90vh;
+  margin-top: -14.5rem;
+  background: url(../img/Earth-from-space-1-64e9a7c4.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+}
+
+.home .content {
+  max-width: 60rem;
+}
+
+.home .content h3 {
+  padding-top: 10rem;
+  font-size: 6rem;
+  color: #fff;
+}
+
+.home .content p {
+  font-size: 1.5rem;
+  font-weight: 300;
+  line-height: 1.8rem;
+  padding: 1rem 0;
+  color: #fff;
+}
+
+.home .content img {
+  height: 10rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header_bottom {
+  min-height: 15vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 15%;
+  top: 0;
+  z-index: 1000;
+}
+
+.header_bottom .navbar a {
+  margin: 0 1rem;
+  font-size: 1.6rem;
+  color: #fff;
+  background-color: #050030;
+  border: 0.2rem solid #00548b;
+  padding: 1rem 4rem 1rem 4rem;
+  border-radius: 1rem;
+}
+
+.header_bottom .navbar a:hover {
+  border-color: #fff;
+}
+
+/* ÖnBilgi Bitiş */
+
+/* Zaman Çizelgesi Başlangıç */
+.time_line {
+  min-height: 100vh;
+  background: url(../img/timelinebackgroundV5.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+  
+}
+
+.time_line .card-1container{
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+gap: 1rem;
+padding-top: 10rem;
+padding-left: 10rem;
+}
+
+.time_line .card-2container{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  gap: 1rem;
+  padding-top: 10rem;
+  padding-left: 10rem;
+  padding-bottom: 5rem;
+
+  }
+
+.time_line .card{
+  padding: 3rem;
+  background-color: #0000007c;
+  width: 32rem;
+  border-radius: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  color: #fff;
+  gap: 1rem;
+}
+
+.time_line .card:hover{
+  background-color: #000000ef;
+}
+
+
+
+
+/* Zaman Çizelgesi Bitiş */
+
+/*Hakkımda Başlangıç*/
+
+.about{
+  background-color: #fff;    
+}
+
+.about .row {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 2rem;
+
+}
+
+.about .row .image{
+  flex: 1 1 45rem;
+
+}
+
+
+.about .row img{
+  width: 100%;
+  box-shadow: 0px 0px 20px 6px #050030ba;
+  -webkit-box-shadow: 0px 0px 20px 6px #050030ba;
+  -moz-box-shadow: 0px 0px 20px 6px #050030ba;
+
+}
+
+.about .row .content{
+  flex: 1 1 45rem;
+
+}
+
+.about .row .content h3{
+  font-size: 3rem;
+  
+}
+
+.about .row .content p{
+  font-size: 1.6rem;
+  line-height: 1.8;
+  padding: 1rem 0;
+
+}
+
+/*Hakkımda Bitiş*/
+
+
+/*Galeri Başlangıç*/
+
+.gallery{
+  background-color: #fff;
+}
+
+.gallery .glh1{
+  text-align: center;
+  font-size: 4rem;
+  margin-bottom: 5rem;
+}
+
+ .gallery .card-1container{
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+gap: 1.5rem;
+margin-top:5rem; 
+margin-bottom: 5rem;
+ }
+
+ .gallery .card-1container .card{
+border-radius: 3rem;
+ }
+
+ .gallery .card-1container .image{
+height: 25rem;
+overflow: hidden;
+width: 100%;
+  border-radius: 1rem;
+
+ }
+
+  .gallery .card-1container .content{
+font-size: 1.5rem;
+text-align: center;
+
+ }
+
+
+ .gallery .card-1container .card .image img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+ }
+
+.gallery .card-1container .card:hover .image img{
+transform: scale(1.2);
+
+}
+
+
+
+
+/*Galeri Bitiş*/
+
+/*footer ve bitiş*/
+.footer{
+  text-align: center;
+  color: #fff;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
